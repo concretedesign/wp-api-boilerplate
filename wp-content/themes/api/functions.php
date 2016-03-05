@@ -115,8 +115,3 @@ function api_scripts() {
 	wp_enqueue_style( 'api-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'api_scripts' );
-
-/**
- * Include custom post types
- */
- require get_template_directory() . '/post-types/location.php';
